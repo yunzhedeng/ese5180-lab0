@@ -50,3 +50,7 @@ tags
 
 .idea
 Cellular-IoT-Fundamentals.code-workspace
+
+.DS_Store
+build/
+build_diag/
