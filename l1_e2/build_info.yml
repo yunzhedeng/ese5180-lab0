@@ -1,0 +1,5 @@
+cmake:
+  toolchain:
+    name: 'zephyr'
+    path: '/opt/nordic/ncs/toolchains/ccc010f809/opt/zephyr-sdk'
+version: '0.1.0'
