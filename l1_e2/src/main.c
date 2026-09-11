@@ -13,7 +13,7 @@
 
 /* The devicetree node identifier for the "led0" alias. */
 #define LED0_NODE DT_ALIAS(led5180)
-#define BUTTON_NODE DT_ALIAS(sw0)
+#define BUTTON_NODE DT_ALIAS(button5180)
 
 
 /*
