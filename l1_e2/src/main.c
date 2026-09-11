@@ -3,6 +3,7 @@
 #include <zephyr/sys/byteorder.h>
 #include <zephyr/sys/printk.h>
 #include <errno.h>
+#include "bme_temperature.h"
 
 static const struct i2c_dt_spec bme =
     I2C_DT_SPEC_GET(DT_NODELABEL(bme5180));
@@ -33,13 +34,7 @@ static int wait_ready(void)
 
 static double compensate_temperature(int32_t raw)
 {
-    double var1 = (raw / 16384.0 - dig_T1 / 1024.0) * dig_T2;
-
-    double difference = raw / 131072.0 - dig_T1 / 8192.0;
-
-    double var2 = difference * difference * dig_T3;
-
-    return (var1 + var2) / 5120.0;
+    return bme_compensate_temperature(raw, dig_T1, dig_T2, dig_T3);
 }
 
 int main(void)
@@ -123,10 +118,8 @@ int main(void)
             continue;
         }
 
-        int32_t raw = ((int32_t)data[0] << 12)
-                    | ((int32_t)data[1] << 4)
-                    | (data[2] >> 4);
-
+        int32_t raw = bme_decode_raw(data);
+        
         if (raw == 0x80000) {
             printk("Temperature sample unavailable\n");
             k_msleep(2000);

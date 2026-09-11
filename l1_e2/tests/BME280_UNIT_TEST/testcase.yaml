@@ -1,0 +1,8 @@
+tests:
+  bme280.sanity:
+    platform_allow:
+      - qemu_cortex_m3
+    tags:
+      - bme280
+      - unit
+    harness: ztest

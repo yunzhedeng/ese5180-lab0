@@ -15,11 +15,7 @@
     pinctrl-1 = <&lab_i2c1_sleep>;
     pinctrl-names = "default", "sleep";
 
-    bme5180: bme280@77 {
-        compatible = "i2c-device";
-        status = "okay";
-        reg = <0x77>;
-    };
+    #include "bme280-node.dtsi"
 };
 
 &pinctrl {

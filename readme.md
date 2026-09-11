@@ -4,7 +4,7 @@
 | ---------------- | --------------------------- |
 | Yunzhe Deng      | deng1@engineering.upenn.edu |
 
-**GitHub Repository URL:**
+**GitHub Repository URL: https://github.com/yunzhedeng/ese5180-lab0.git**
 
 ## 1. 3.1 Terminal Prints
 
@@ -24,5 +24,13 @@ Logger
 ## 3. 7.2 Testing Outputs
 
 ![](./images/7.2.png)
+
+## 4. 8.1 Temperature Screenshots
+
+![](./images/8.1.png)
+
+## 5. 8.2 Ztest Screenshots
+
+![](./images/8.2.png)
 
 
