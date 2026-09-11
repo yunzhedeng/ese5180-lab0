@@ -20,3 +20,9 @@ Printk
 
 Logger
 ![](./images/6.2-log.png)
+
+## 3. 7.2 Testing Outputs
+
+![](./images/7.2.png)
+
+
