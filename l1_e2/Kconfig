@@ -1,0 +1,16 @@
+mainmenu "Lab 0 application"
+
+source "Kconfig.zephyr"
+
+choice SUM_IMPLEMENTATION
+    prompt "Sum implementation"
+    default SUM_PRINT
+
+config SUM_PRINT
+    bool "Use printk"
+
+config SUM_LOG
+    bool "Use Logger"
+    depends on LOG
+
+endchoice

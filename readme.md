@@ -1,11 +1,22 @@
 # ESE5180: Lab 0 Zephyr
 
-| Team Member Name | Email Address       |
-|------------------|---------------------|
-| [Name 1]         | [Email 1]           |
+| Team Member Name | Email Address               |
+| ---------------- | --------------------------- |
+| Yunzhe Deng      | deng1@engineering.upenn.edu |
 
-**GitHub Repository URL:** 
+**GitHub Repository URL:**
 
-## 1. Sample Header
+## 1. 3.1 Terminal Prints
 
-## 2. Sample Second Header
+![](./images/3.1-1.png)
+![](./images/3.1-2.png)
+![](./images/3.1-3.png)
+![](./images/3.1-4.png)
+
+## 2. 6.1 Console Output
+
+Printk
+![](./images/6.2-print.png)
+
+Logger
+![](./images/6.2-log.png)
